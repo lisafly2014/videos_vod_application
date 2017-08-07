@@ -11,7 +11,7 @@ This  application allows scrolling a list of videos in a horizontal carousel and
 3. Run ``` npm install ``` install dependent modules in node_modules
 4. Run ``` bower install ``` install bower_components
 5. Run ``` node app.js```or ```nodemon app.js" to run the application
-
+6. input "localhost:4000" to view the front-end 
 
 ## Features
 
