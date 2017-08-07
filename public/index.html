@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>vodapp</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/admin-lte.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
+
+    <script type="text/javascript" src="lib/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="lib/underscore/underscore.js"></script>
+    <script type="text/javascript" src="lib/moment/moment.js"></script>
+
+    <script type="text/javascript" src="js/restfulApi_config.js"></script>
+    <script type="text/javascript" src="js/vodapp.js"></script>
+    <script type="text/javascript" src="js/video_list_control.js"></script>
+    <script type="text/javascript" src="js/video_player_control.js"></script>
+    <script type="text/javascript" src="js/video_viewed_history_control.js"></script>
+
+
+
+
+</head>
+
+<body ng-app ="myApp" class="contain-fluit">
+	<div class="header-panel">
+		<h3 style="padding-left:30px"> HOME </h3>
+	</div>
+
+	<div style="padding-right:50px" ng-controller="videoController">
+		<span >
+			<a class="btn btn-default btn-lg btn-right-history" href="#" ng-click="showViewedHistory()">
+			    History
+		    </a>
+		</span>
+	</div>
+	<div class="clearfix"></div>
+
+    <div ng-include="'view/video_player.html'"></div>
+	<div ng-include="'view/video_list.html'"></div>
+    <div ng-include="'view/video_viewed_history.html'"></div>
+
+
+
+</body>
+</html>
